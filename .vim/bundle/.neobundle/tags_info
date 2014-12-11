@@ -1,4 +1,6 @@
 The-NERD-tree
 neobundle.vim
-neomru
+neomru.vim
 unite.vim
+vim-coffee-script
+vim-slim

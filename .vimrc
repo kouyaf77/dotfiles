@@ -9,7 +9,7 @@ set vb t_vb= " ビープをならさない
 set whichwrap=b,s,h,l,<,>,[,] " カーソルを行頭、行末で止まらないようにする
 set showcmd " コマンドをステータス行に表示
 set showmode " 現在のモードを表示
-set textwidth=80 "80文字のとろこに線を引く
+set colorcolumn=80 "80文字のとろこに線を引く
 set expandtab " Tabキーを空白に変換
 set wrapscan " 最後まで検索したら先頭へ戻る
 set ignorecase " 大文字小文字無視
@@ -20,7 +20,6 @@ set laststatus=2 " 常にステータスラインを表示
 set encoding=utf-8 " デフォルトエンコーディング
 set number " 行番号を表示
 set cursorline
-hi CursorLine term=bold cterm=bold guibg=Grey40
 
 " TABキーを押した際にタブ文字の代わりにスペースを入れる
 set expandtab

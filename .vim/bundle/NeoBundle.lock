@@ -1,3 +1,6 @@
 NeoBundleLock The-NERD-tree af65bd23e69a3a5fc1a39eb47733191b7110bb1e
 NeoBundleLock neobundle.vim 7fce7a42dc387f9472222a87ed361eeb9dc1e51d
+NeoBundleLock vim-coffee-script 827e4a38b07479433b619091469a7495a392df8a
+NeoBundleLock neomru.vim 7df9999b841228661ff73909c5b9e34952331e22
+NeoBundleLock vim-slim 0daaa8581f9a9968cebbc7d14ae9acf1625c0389
 NeoBundleLock unite.vim cec560e4b2cc8f0dab14a3d18dca1885b333b6b3
