@@ -20,6 +20,7 @@ set laststatus=2 " 常にステータスラインを表示
 set encoding=utf-8 " デフォルトエンコーディング
 set number " 行番号を表示
 set cursorline
+set t_Co=256
 
 " TABキーを押した際にタブ文字の代わりにスペースを入れる
 set expandtab
@@ -63,3 +64,8 @@ inoremap <C-l> <Right>
 
 " NeoBundle
 source ~/dotfiles/.vimrc.neobundle
+
+" Colorscheme
+syntax enable
+set background=dark
+colorscheme solarized
