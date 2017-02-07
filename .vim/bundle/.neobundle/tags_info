@@ -1,6 +1,8 @@
 The-NERD-tree
 neobundle.vim
 neomru.vim
+plantuml-syntax
 unite.vim
 vim-coffee-script
+vim-colors-solarized
 vim-slim
