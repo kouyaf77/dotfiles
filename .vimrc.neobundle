@@ -1,7 +1,10 @@
-set nocompatible
-filetype plugin indent off
+if 0 | endif
 
 if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
+
   set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
 endif
 
@@ -13,6 +16,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'aklt/plantuml-syntax'
 
 call neobundle#end()
 
