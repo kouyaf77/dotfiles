@@ -1,0 +1,61 @@
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=~/dotfiles/.vim/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+if dein#load_state('~/dotfiles/.vim/dein')
+  call dein#begin('~/dotfiles/.vim/dein')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/dotfiles/.vim/dein/repos/github.com/Shougo/dein.vim')
+
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('Shougo/unite.vim')
+  call dein#add('scrooloose/nerdtree')
+
+  " You can specify revision/branch/tag.
+  call dein#add('Shougo/vimshell',  { 'rev': '3787e5' })
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+" NERDTree
+nnoremap <silent><C-n> :NERDTreeToggle<CR>
+
+" Unite
+nnoremap [unite] <Nop>
+nmap f [unite]
+
+nnoremap [unite]u :<C-u>Unite -no-split<Space>
+
+" 全部乗せ
+nnoremap <silent> [unite]a :<C-u>UniteWithCurrentDir -no-split -buffer-name=files buffer file_mru bookmark file<CR>
+" ファイル一覧
+nnoremap <silent> [unite]f :<C-u>Unite -no-split -buffer-name=files file<CR>
+" バッファ一覧
+nnoremap <silent> [unite]b :<C-u>Unite -no-split buffer<CR>
+" 常用セット
+nnoremap <silent> [unite]u :<C-u>Unite -no-split buffer file_mru<CR>
+" 最近使用したファイル一覧
+nnoremap <silent> [unite]m :<C-u>Unite -no-split file_mru<CR>
+" 現在のバッファのカレントディレクトリからファイル一覧
+nnoremap <silent> [unite]d :<C-u>UniteWithBufferDir -no-split file<CR>
+
+let g:unite_source_file_mru_limit = 200

@@ -62,10 +62,5 @@ inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 
-" NeoBundle
-source ~/dotfiles/.vimrc.neobundle
-
-" Colorscheme
-syntax enable
-set background=dark
-colorscheme solarized
+" dein
+source ~/dotfiles/.vimrc.dein
