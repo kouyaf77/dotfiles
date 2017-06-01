@@ -18,6 +18,7 @@ if dein#load_state('~/dotfiles/.vim/dein')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/unite.vim')
   call dein#add('scrooloose/nerdtree')
+  call dein#add('derekwyatt/vim-scala')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/vimshell',  { 'rev': '3787e5' })
